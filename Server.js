@@ -43,6 +43,6 @@ app.use("/api/v1", orderRoutes);
 app.use("/api/v1", blogRoutes);
 
 // Start the server
-app.listen(port, () => {
+app.listen(port, '0.0.0.0',() => {
   console.log(`Server is running on Port no ${port}`);
 });
